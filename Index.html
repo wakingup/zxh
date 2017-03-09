@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<title>个人简历</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.fullpage.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fullpage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu: '#menu'
+	});
+});
+$(function(){
+	   $('.fp-tableCell').removeClass('fp-tableCell');
+    $('#menuswitcher').click(function(){
+    $('.navigation').toggle();
+    $('#menuswitcher>span').attr('class',$('#menuswitcher>span').attr('class')=='fa fa-bars'?'fa fa-times':'fa fa-bars');
+  });
+});
+</script>
+</head>
+
+<body>
+<section id="nav">
+<div class="pagelogo">
+ <div class="special-element center">
+  <span></span>
+ </div>
+ <a href="#"><strong>个人简历</strong></a>
+ </div>
+ <div class="menuswitch">
+  <a href="#" id="menuswitcher">
+  <span class="fa fa-bars"></span>
+  </a>
+ </div>
+ <div class="navigation">
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1"><span class="fa fa-fighter-jet"></span>
+	基本资料
+	</a></li>
+	<li data-menuanchor="page2"><a href="#page2"><span class="fa fa-paper-plane"></span>
+	工作经验
+	</a></li>
+	<li data-menuanchor="page3"><a href="#page3"><span class="fa fa-space-shuttle">
+	项目经验
+	</a></li>
+	<li data-menuanchor="page4"><a href="#page4"><span class="fa fa-flag"></span>
+	社交网络
+	</a></li>
+</ul>
+</div>
+</section>
+<div id="dowebok">
+	<div class="section city">
+		<h3>基本资料</h3>
+		<div class="myname">
+			<p>姓  名： 赵兴华 </p>
+			<p>联系电话：15210693258</p>
+			<p>工作年限：两年 </p>
+		</div>
+		<div class="sex">
+			<p> 性 别：男</p>
+			<p>电子邮箱：wakingupme@126.com</p>
+			<p>求职意向：web前端开发工程师</p>
+		</div>
+		<div class="school">
+			<p>聊城大学   			本科            软件工程		2011-2015</p>
+		</div>
+		<div class="myselftip">
+			<h4>自我介绍</h4>
+		</div>
+		<div class="myself">
+			<p>1、善良、乐观和友爱，善于与人沟通交流</p>
+			<p>2、工作认真，参与过多个项目的开发，积累一定的经验，熟悉常见的业务处理，能快速融入团队</p>
+			<p>3、对工作尽职尽责，乐于从事有挑战性，有压力的工作</p>
+			<p>4、对新技术有极高关注度和洞察力，时常关注技术大牛（如阮一峰、廖雪峰、尤雨溪）博客、微博</p>
+		</div>
+	</div>
+	<div class="section carousel">
+		<h3>工作经验</h3>
+		<div class="job">
+			<h4>北京平川嘉恒技术有限公司 2015/07 -- 2017/02</h4>
+			<p>1.前期与ui设计人员沟通，确定色彩及平面元素设定，结构和布局规范确认，使用</p>
+			<p>DIV+CSS搭建网站页面框架。</p>
+			<p>2.使用JavaScript,jQuery库，less预编译 ,CSS3( 媒体查询、transition)等技术开</p>
+			<p>发PC端部分功能页面的布局，动画过渡效果；使用JavaScript，Zepto库，利用AJAX</p>
+			<p>进行数据交互，动态的数据展现( 主要是首页，产品列表页，产品详情页 )。</p>
+			<p>3.开发中不断的与产品经理，UI，后台进行沟通，改进，优化项目性能。</p>
+			<p>4.进行公司项目的相关功能页面的迭代维护，代码优化，bug修复等。</p>
+		</div>
+		<div class="job2">
+			<h4>山东长川软件有限公司 2014/09 -- 2015/06</h4>
+			<p>1.参与与负责PC端产品的开发；</p>
+			<p>2．根据业务需求完成前端开发内容；</p>
+			<p>3．负责前端页面开发制作与维护，配合后台开发人员实现页面、界面相关功能；</p>
+			<p>4．根据功能需求，优化用户体验及交互效果。</p>
+		</div>
+	</div>
+	<div class="section dark">
+		<h3>项目经验</h3>
+			 <div class="youcheng"><img src="images/20160712144101_30640.png" alt=""></div>
+			 <div class="duty">
+			  <h4>优呈(移动端)  2016/09 -- 2016/12</h4>
+			 	<p>1.根据根据UI设计师的设计图完成网页制作</p>
+			 	<p>2.利用zepto和mui快速搭建移动端页面布局</p>
+			 	<p>3.优呈主要有用户模块、首页、商品模块、搜索模块、购物车，</p>
+			 	<p>主要负责用户模块(登录和注册)、商品模块。</p>
+			 	<p>3.在登陆模块利用Ajax和JSON技术进行页面中数据交互的处理和渲染</p>
+			 	<p>4.开发中不同尺寸终端设备的模拟、真实测试</p>
+			 </div>
+		</div>
+	<div class="section dog">
+		<h3>我的社交</h3>
+		<nav>
+			<ul>
+				<li><a href="https://github.com/wakingup" class="link-icon gt-icon"></a><div class="icon-text">GitHub</div></li>
+				<li><a href="http://weibo.com/2288194914/profile?rightmod=1&wvr=6&mod=personinfo" class="link-icon xl-icon"></a><div class="icon-text">新浪微博</div></li>
+				<li><a href="#" class="link-icon wx-icon"></a><div class="icon-text">公众微信</div></li>
+				<li><a href="#" class="link-icon bi-icon"></a><div class="icon-text">哔哩哔哩</div></li>
+				<li><a href="#" class="link-icon jo-icon"></a><div class="icon-text">加入我们</div></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+</body>
+</html>

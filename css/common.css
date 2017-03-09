@@ -1,0 +1,23 @@
+body{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+a {
+    font-family: '微软雅黑', 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
